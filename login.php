@@ -15,7 +15,7 @@
         $check = $conn->prepare('select  * from user where username = ? and password = ?');
         $check->bind_param('ss',$username,$password);
         $username = $_POST['username'];
-        $password = $_POST['password'];
+        $password = md5($_POST['password']);
         $login = false;
         if($check->execute()){
             $user = $check->get_result();

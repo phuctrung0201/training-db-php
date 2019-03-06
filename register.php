@@ -13,7 +13,7 @@
         $complete = true;
             $checkUser = $conn->prepare('insert into user(username,password) values(?,?)');
             $usern = $_POST['usern'];
-            $passw = $_POST['passw'];
+            $passw = md5($_POST['passw']);
             $name = $_POST['name'];
             $age = $_POST['age'];
             $gender = $_POST['gender'];
