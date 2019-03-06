@@ -20,3 +20,4 @@ create table role(
     foreign key (id)
     references user(id) on delete cascade
 );
+insert into user(username,password) values ('admin','admin');

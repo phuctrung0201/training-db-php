@@ -33,7 +33,7 @@
     }
 ?>
 <body class='bg-light h-100'>
-    <div class='pt-5 container w-50 card' style='position: relative; top:50%; transform: translateY(-50%);'>
+    <div class='pt-5 container card' style='max-width:350px; position: relative; top:50%; transform: translateY(-50%);'>
         <h1 class='text-center' >Login</h1>
         <?php
         if(isset($login) && !$login){
